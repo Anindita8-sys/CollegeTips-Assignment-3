@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>I am a <span id="typing-text"></span></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Job Roles</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="images/Anindita.jpg" alt="My Profile" class="profile-image" />
+    <p>Versatile Professional with Experiences in IT, BPO and Corporate Sectors.</p>
+    <a href="assets/ANINDITA_CHAUDHURY_Resume.pdf" download class="btn">📄 Download CV</a>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="filter-buttons">
+      <button data-filter="all">ALL</button>
+      <button data-filter="web">Qualification and Certifications</button>
+      <button data-filter="mobile">Internships And Projects</button>
+    </div>
+    <div id="projects-list">
+      <div class="project-card" data-category="web">
+        <h3>BCA,MCA</h3>
+        <p>Advanced Digital Marketing-Zinmatt, Software Testing Industrial Training- CNC Web World and More</p>
+      </div>
+      <div class="project-card" data-category="mobile">
+        <h3>Software Tester Intern-Nidish Technologies, Web Development Intern- CollegeTips.in</h3>
+        <p>Telstra, Telus, Telefonica, AT & T India and More</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Job Roles</h2>
+    <div class="testimonial">
+      <p>"Testing Web and Mobile Applications"</p>
+      <h4>– Tester Associate Engineer at Accenture, November 2014-January 2017</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Involved in SAP MM projects, End User work, Implementation and Support"</p>
+      <h4>– SAP MM Consultant at Micro Technoid, February 2017-MAY 2020</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Getting Clients through Freelancing Sites and achieving targets"</p>
+      <h4>– Project Relationship Coordinator at Micro Technoid, June 2020-February 2023</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Office Administration and Sales and Marketing-Documentation,website creation,Telecalling"</p>
+      <h4>– Sales Coordinator at Binnovator, February 2023-July 2024</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Selling Loans to existing customers of TVS Credit through Telemarketing"</p>
+      <h4>– Customer Care Executive, September 2024-October 2024</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Involved in Customer Services"</p>
+      <h4>– Customer Support Coordinator at Ankur Telecom Pvt Ltd, November 2024-January 2025</h4>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <article class="blog-post">
+      <h3>2 Mistakes as a Job Seeker one should avoid</h3>
+      <p>Switching Companies frequently - Focus on improving your skills,Year Gaps without a valid reason - Engage yourself in continuous learning Process</p>
+      <a href="#">Scan my Portfolio →</a>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 It's Anindita Chaudhury. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('section', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 800,
+      reset: false
+    });
+  </script>
+</body>
+</html>
