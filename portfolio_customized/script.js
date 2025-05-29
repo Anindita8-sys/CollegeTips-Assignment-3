@@ -7,6 +7,20 @@ document.getElementById('toggle-theme').addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
 
+// script.js
+const video = document.getElementById('myVideo');
+const playPauseBtn = document.getElementById('playPauseBtn');
+
+playPauseBtn.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+    playPauseBtn.textContent = 'Pause';
+  } else {
+    video.pause();
+    playPauseBtn.textContent = 'Play';
+  }
+});
+
 const words = ["Developer", "Software Tester", "Techie"];
 let i = 0, j = 0, currentWord = "", isDeleting = false;
 
